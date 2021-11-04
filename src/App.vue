@@ -10,9 +10,8 @@ import UserPane from '@/components/UserPane/index.vue';
 export default defineComponent({
   components: {
     UserPane,
-  }
+  },
 });
 </script>
 
-<style>
-</style>
+<style></style>

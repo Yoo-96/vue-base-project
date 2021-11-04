@@ -14,7 +14,10 @@ module.exports = {
     'no-undef': 'off',
     'eol-last': [1, 'always'],
     'no-mixed-spaces-and-tabs': 2,
-    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow', semi: true }],
+    'prettier/prettier': [
+      'error',
+      { singleQuote: true, vueIndentScriptAndStyle: false, semi: true },
+    ],
     'vue/no-multiple-template-root': 0, // template 唯一跟节点校验
     'vue/multi-word-component-names': 0,
   },

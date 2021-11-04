@@ -1,8 +1,8 @@
 <template>
   <div>当前查询次数: {{ count }}</div>
   <div>
-    <div>name:  {{ userInfo.name }}</div>
-    <div>desc:  {{ userInfo.desc }}</div>
+    <div>name: {{ userInfo.name }}</div>
+    <div>desc: {{ userInfo.desc }}</div>
   </div>
 </template>
 <script lang="ts">
