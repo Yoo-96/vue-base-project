@@ -6,7 +6,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stylelint": "stylelint src/**/*.less"
   },
   "dependencies": {
     "path": "^0.12.7",
