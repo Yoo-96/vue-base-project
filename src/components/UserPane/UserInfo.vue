@@ -1,6 +1,6 @@
 <template>
   <div>当前查询次数: {{ count }}</div>
-  <div>
+  <div class="user-info">
     <div>name: {{ userInfo.name }}</div>
     <div>desc: {{ userInfo.desc }}</div>
   </div>
@@ -39,3 +39,9 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="less" scoped>
+.user-info {
+  color: @primary-color;
+}
+</style>
