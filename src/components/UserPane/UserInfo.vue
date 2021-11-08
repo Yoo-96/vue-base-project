@@ -5,14 +5,8 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent, ref, onMounted } from 'vue';
-
-import { fetchUsetInfo } from '@/api/user';
-
-interface UserInfoType {
-  name: string;
-  desc: string;
-}
+import { defineComponent, ref, onMounted, computed } from 'vue';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   props: {
@@ -22,10 +16,10 @@ export default defineComponent({
     },
   },
   setup(props) {
-    let userInfo = ref<UserInfoType>({ name: '', desc: '' });
+    const store = useStore();
+
     const getUserInfo = async (name: string) => {
-      const info = await fetchUsetInfo(name);
-      userInfo.value = info;
+      store.dispatch('user/getUserInfo', name);
     };
 
     onMounted(() => {
@@ -33,7 +27,7 @@ export default defineComponent({
     });
 
     return {
-      userInfo,
+      userInfo: computed(() => store.getters.userInfo),
     };
   },
 });
