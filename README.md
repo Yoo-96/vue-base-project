@@ -291,7 +291,7 @@ yarn add lint-staged -D
 ```
 {
   "*.{js,ts,vue}": ["npm run lint"],
-  "*.{html,vue,css,scss,sass,less}": ["npm run lint:style"]
+  "*.{vue,css,scss,sass,less}": ["npm run lint:style"]
 }
 ```
 
