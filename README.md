@@ -31,6 +31,39 @@
 npm init vite@latest <project-name> vue-ts
 ```
 
+# `alias` 别名配置
+
+## 修改 `vite.config.js`
+
+```js
+// vite.config.js
+
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import { resolve } from 'path';
+
+export default defineConfig({
+  plugins: [vue()],
+  resolve: {
+    alias: {
+      // __dirname找不到，需要安装 npm install @types/node --save-dev
+      '@': resolve(__dirname, 'src'),
+    },
+  },
+});
+```
+
+## 修改 `tsconfig.json`
+
+```js
+"compilerOptions": {
+    ...
+    "paths": {
+      "@/*": [ "./src/*" ],
+    }
+},
+```
+
 # 配置 `eslint` 、`prettier`
 
 ## 安装所需依赖
