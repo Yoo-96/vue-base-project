@@ -1,5 +1,5 @@
 
-# vue-base-project
+# vue3-base-project
 
 从零搭建vue3.x项目工程环境，集成ESLint、Prettier、Stylelint、husky、lint-staged等规范
 
