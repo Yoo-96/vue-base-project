@@ -451,6 +451,11 @@
     "@vue/compiler-dom" "3.2.21"
     "@vue/shared" "3.2.21"
 
+"@vue/devtools-api@^6.0.0-beta.18":
+  version "6.0.0-beta.20"
+  resolved "https://registry.npmmirror.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.20.tgz?cache=0&sync_timestamp=1635944976169&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fdevtools-api%2Fdownload%2F%40vue%2Fdevtools-api-6.0.0-beta.20.tgz#b5405c9a84fb44687d05e7c4c7854b1639141106"
+  integrity sha1-tUBcmoT7RGh9BefEx4VLFjkUEQY=
+
 "@vue/reactivity@3.2.21", "@vue/reactivity@^3.2.19":
   version "3.2.21"
   resolved "https://registry.npmmirror.com/@vue/reactivity/download/@vue/reactivity-3.2.21.tgz?cache=0&sync_timestamp=1635836342408&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Freactivity%2Fdownload%2F%40vue%2Freactivity-3.2.21.tgz#073ad144192ed78a07e151e95a3baa515e4099a2"
@@ -3323,6 +3328,13 @@ vue-eslint-parser@^8.0.1:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.5"
+
+vue-router@4:
+  version "4.0.12"
+  resolved "https://registry.npmmirror.com/vue-router/download/vue-router-4.0.12.tgz#8dc792cddf5bb1abcc3908f9064136de7e13c460"
+  integrity sha1-jceSzd9bsavMOQj5BkE23n4TxGA=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.18"
 
 vue-tsc@^0.3.0:
   version "0.3.0"

@@ -1,4 +1,9 @@
-export const fetchUsetInfo = (name: string) => {
+interface UserInfoType {
+  name: string;
+  desc: string;
+}
+
+export const fetchUsetInfo = async (name: string): Promise<UserInfoType> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve({

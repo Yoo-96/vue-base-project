@@ -1,14 +1,15 @@
 <template>
-  <user-info />
+  user page
+  <user-pane />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import UserInfo from './UserInfo.vue';
+import UserPane from '@/components/UserPane/index.vue';
 
 export default defineComponent({
   components: {
-    UserInfo,
+    UserPane,
   },
 });
 </script>
